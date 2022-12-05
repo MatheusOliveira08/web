@@ -23,7 +23,8 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/login', 'AuthController.login').as('auth.login')
 Route.post('/login', 'AuthController.showLogin').as('auth.showLogin')
 
-Route.get('/', 'VideosController.index').as('videos.index')
+Route.get('/', 'VideosController.home').as('videos.home')
+Route.get('/videos', 'VideosController.index').as('videos.index')
 
 
 /*Route.get('/', async ({ view }) => {
