@@ -14,10 +14,10 @@ export default class AuthController {
 
     public async showLogin({ request, response }: HttpContextContract) {
         if(request.input('perfil') == 'admin') {
-            return response.redirect().toRoute('conta.admin')
+            return response.redirect().toRoute('videos.admin')
         }
         else{
-            return response.redirect().toRoute('conta.user')
+            return response.redirect().toRoute('videos.user')
         }
     }
 }
