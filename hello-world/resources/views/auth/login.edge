@@ -21,11 +21,21 @@
                 <form action="{{ route('auth.showLogin') }}" method="POST" class="form-login">
                     <div class="textfield">
                         <label for="mail"> Email: </label>
-                        <input type="email" name="email" id="mail">
+                        <input type="email" name="email" id="mail" placeholder="Email">
                     </div>
                     <div class="textfield">
                         <label for="senha"> Senha: </label>
-                        <input type="password" name="password" id="senha">
+                        <input type="password" name="password" id="senha" placeholder="Senha">
+                    </div>
+                    <div class="type-user">
+                        <label for="perfil"> Tipo de perfil: </label>
+                        <select name="perfil">
+                            <option value="user" selected> Usuário </option>
+                            <option value="admin"> Administrador </option>
+                            <!--@each(item in perfil)
+                            <input type="radio" name="perfil"> {{ item }}  
+                                @end -->
+                        </select>
                     </div>
                     <button class="btn-login"> ENTRAR </button>
                 </form>
