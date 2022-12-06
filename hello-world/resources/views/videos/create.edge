@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Conteúdo do Canal - SlayDios </title>
+</head>
+<body>
+
+    <main>
+
+        <h1> Postar Novos Vídeos </h1>
+        <form action="{{ route('videos.store')}}" method="POST">
+
+            <label for="nome"> Título:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="desc"> Descrição: </label>
+            <textarea name="description" id="desc" cols="25" rows="1"></textarea>
+            <button type="submit"> Enviar </button>
+
+        </form>
+
+    </main>
+    
+</body>
+</html>
